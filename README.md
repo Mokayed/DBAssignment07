@@ -2,7 +2,7 @@
 
 <h1>Setup <g-emoji class="g-emoji" alias="checkered_flag" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c1.png">🏁</g-emoji><h1>
   
-  '''sql
+```sql
   CREATE 
     ALGORITHM = UNDEFINED 
     DEFINER = `root`@`%` 
@@ -34,5 +34,5 @@ VIEW `CustomerOverview` AS
         ((`employees`
         JOIN `customers` ON ((`employees`.`employeeNumber` = `customers`.`salesRepEmployeeNumber`)))
         JOIN `offices` ON ((`employees`.`officeCode` = `offices`.`officeCode`)))
-  ''
+```
 
