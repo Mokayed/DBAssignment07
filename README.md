@@ -37,4 +37,7 @@ VIEW `CustomerOverview` AS
         JOIN `customers` ON ((`employees`.`employeeNumber` = `customers`.`salesRepEmployeeNumber`)))
         JOIN `offices` ON ((`employees`.`officeCode` = `offices`.`officeCode`)))
 ```
+<h1>Exercises<g-emoji class="g-emoji" alias="page_with_curl" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c3.png">📃</g-emoji></h1>
+
+<h2>Exercise 1</h2>
 
