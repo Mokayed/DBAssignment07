@@ -86,6 +86,6 @@ VIEW `CustomerOverview` AS
 </tbody>
 </table>
 
-<p>We conclude this is a secound normal form, because there is some columns in the view table that contains multiple value</p>
+<p>We conclude this is a secound normal form, because there is some columns in the view table that contains multiple values.</p>
 
 
