@@ -80,6 +80,7 @@ VIEW `CustomerOverview` AS
 <td align="center">4</td>
 <td align="center">4</td>
 <td align="center">4</td>
+<td align="center">4</td>
 
 </tr>
 </tbody>
