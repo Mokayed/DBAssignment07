@@ -47,7 +47,8 @@ VIEW `CustomerOverview` AS
  <table>
 <thead>
 <tr>
-<th align="left"><strong>1_customerNumber</strong></th>
+<th align="left">Colums</th>
+<th align="center">1_customerNumber</th>
 <th align="center">2_customerName</th>
 <th align="center">3_contactName</th>
 <th align="center">4_contactPhone</th>
@@ -65,7 +66,7 @@ VIEW `CustomerOverview` AS
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong>Priority</strong></td>
+<td align="left"><strong>Dependent</strong></td>
 <td align="center">1</td>
 <td align="center">2</td>
 <td align="center">3</td>
