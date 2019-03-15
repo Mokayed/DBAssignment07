@@ -68,19 +68,19 @@ VIEW `CustomerOverview` AS
 <tr>
 <td align="left"><strong>Dependent</strong></td>
 <td align="center">1</td>
-<td align="center">2</td>
-<td align="center">3</td>
-<td align="center">4</td>
-<td align="center">5</td>
-<td align="center">4</td>
-<td align="center">4</td>
-<td align="center">4</td>
-<td align="center">4</td>
-<td align="center">4</td>
-<td align="center">4</td>
-<td align="center">4</td>
-<td align="center">4</td>
-<td align="center">4</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">8</td>
+<td align="center">8</td>
+<td align="center">10</td>
+<td align="center">11</td>
+<td align="center">8</td>
+<td align="center">8</td>
 
 </tr>
 </tbody>
