@@ -43,3 +43,45 @@ VIEW `CustomerOverview` AS
 
 <h2>Exercise 1</h2>
 
+
+ <table>
+<thead>
+<tr>
+<th align="left"><strong>1_customerNumber</strong></th>
+<th align="center">2_customerName</th>
+<th align="center">3_contactName</th>
+<th align="center">4_contactPhone</th>
+<th align="center">5_custCity</th>
+<th align="center">6_custZip</th>
+<th align="center">7_custCountry</th>
+ <th align="center">8_repName</th>
+ <th align="center">9_repEmail</th>
+ <th align="center">10_repPhone</th>
+ <th align="center">10_repZip</th>
+ <th align="center">11_repCity</th>
+ <th align="center">12_repAddress</th>
+ <th align="center">13_repCountry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Priority</strong></td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">4</td>
+
+</tr>
+</tbody>
+</table>
+
+
