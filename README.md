@@ -89,3 +89,13 @@ VIEW `CustomerOverview` AS
 <p>We conclude that the view violates a secound normal form, because there is some columns in the view table that contains multiple values.</p>
 
 
+e3:
+
+we created a full text indext on the phone in offices in order to not get the "you are using safe update mode" error.
+<insert example on full text index thing>
+  
+  then we were able to change the repPhone (we also change offices phone because else the repPhone would not make sense):
+  
+  update offices set phone = "+1 212 555 4000" where (phone = "+1 212 555 3000" AND officeCode <> 0);
+update CustomerOverview set repPhone = "+1 212 555 4000" where (repPhone in ("+1 212 555 3000") AND customerNumber <> 0);
+  
