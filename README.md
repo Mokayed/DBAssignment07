@@ -92,6 +92,7 @@ VIEW `CustomerOverview` AS
 e3:
 
 we created a full text indext on the phone in offices in order to not get the "you are using safe update mode" error.
+index helps with: function-based index that avoids the implicit type conversion.
 ->insert example on full text index thing<-
   
   then we were able to change the repPhone (we also change offices phone because else the repPhone would not make sense):
