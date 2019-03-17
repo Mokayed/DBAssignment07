@@ -88,10 +88,12 @@ VIEW `CustomerOverview` AS
 
 <p>We conclude that the view violates a secound normal form, because there is some columns in the view table that contains multiple values.</p>
 
+<h2>Exercise 2</h2>
+We would make a primary key which contains the customerName and repEmail as a composite key, since custCity, custZip, custCountry do not depend on the repEmail of the composite key, and repName, repPhone, repZip, repCity, repAddress, repCountry don't depend on customerNamepart key. With the creation of the composite key there would be violated a second normal form.
 
-e3:
+<h2>Exercise 3</h2>
 
-we created a full text indext on the phone in offices in order to not get the "you are using safe update mode" error.
+We created a full text indext on the phone in offices in order to not get the "you are using safe update mode" error.
 index helps with: function-based index that avoids the implicit type conversion.
 ->insert example on full text index thing<-
   
