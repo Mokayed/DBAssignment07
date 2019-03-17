@@ -93,7 +93,7 @@ We would make a primary key which contains the customerName and repEmail as a co
 
 <h2>Exercise 3</h2>
 
-<p>we created a full text indext on the phone in offices in order to not get the "you are using safe update mode" error.
+<p>We created a full text indext on the phone in offices in order to not get the "you are using safe update mode" error.
 indexes are function based that avoids the implicit type conversion. down below is the code:</p>
 
 ```sql
@@ -102,7 +102,7 @@ ON posts(title)
 ```
   
   <p>
-  then we were able to change the repPhone (first line may not be necessary, try using only last line first, because the offices table should also be affected by that line):</p>
+  Then we were able to change the repPhone (first line may not be necessary, try using only last line first, because the offices table should also be affected by that line):</p>
  
  ```sql
   update offices set phone = "+1 212 555 4000" where (phone = "+1 212 555 3000" AND officeCode <> 0);
