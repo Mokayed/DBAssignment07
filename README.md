@@ -109,7 +109,7 @@ ON posts(title)
 update CustomerOverview set repPhone = "+1 212 555 4000" where (repPhone in ("+1 212 555 3000") AND customerNumber <> 0);
   ```
   
-  <h5>Exercise 3.1</h5>
+  <h3>Exercise 3.1</h3>
   
   <p>We first tried out this line of code to see what would happen:</p>
   
@@ -125,6 +125,6 @@ update CustomerOverview set repPhone = "+1 212 555 4000" where (repPhone in ("+1
    ```
   
 <h2>Exercise 4</h2>
-<p>here we have an image that represents an index assigned to customerName, and the rowId.</p>
+<p>This is an image that represents an index assigned to customerName, and the rowId.</p>
   <img src="https://github.com/Hallur20/DBAssignment07/blob/master/tegning.png"/>
   
