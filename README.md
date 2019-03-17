@@ -86,7 +86,7 @@ VIEW `CustomerOverview` AS
 </tbody>
 </table>
 
-<p>We conclude that the view violates a secound normal form, because there is some columns in the view table that contains multiple values.</p>
+<p>We conclude the view violates a first normal. We conclude also that the view violates a secound normal form, because there is some columns in the view table that contains multiple values. At the same time the view violtes a third normal form because  non-key attribute depends on another non-key attribute you can see the on repName and repPhone wich they depend on repEmail</p>
 
 <h2>Exercise 2</h2>
 We would make a primary key which contains the customerName and repEmail as a composite key, since custCity, custZip, custCountry do not depend on the repEmail of the composite key, and repName, repPhone, repZip, repCity, repAddress, repCountry don't depend on customerNamepart key. With the creation of the composite key there would be violated a second normal form.
