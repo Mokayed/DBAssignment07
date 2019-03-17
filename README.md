@@ -93,7 +93,7 @@ We would make a primary key which contains the customerName and repEmail as a co
 
 <h2>Exercise 3</h2>
 
-We created a full text indext on the phone in offices in order to not get the "you are using safe update mode" error.
+we created a full text indext on the phone in offices in order to not get the "you are using safe update mode" error.
 index helps with: function-based index that avoids the implicit type conversion.
 ->insert example on full text index thing<-
   
@@ -101,4 +101,13 @@ index helps with: function-based index that avoids the implicit type conversion.
   
   update offices set phone = "+1 212 555 4000" where (phone = "+1 212 555 3000" AND officeCode <> 0);
 update CustomerOverview set repPhone = "+1 212 555 4000" where (repPhone in ("+1 212 555 3000") AND customerNumber <> 0);
+  
+  next question in e3:
+  
+  update CustomerOverview set repEmail = "newEmail@classicmodelcars.com" where repName = "Leslie Jennings";
+  our expectation to this was that only the view would be affected, but to our surprise the employees table was also updated.
+  Then we started to research where thinsg could go wrong and we found out that some of the "rep's" were having the same phone numbers. (example: leslie jennings and leslie thompson), so they are in family which could cause issues if updating by the number. So a silly way of doing it would be this: set repEmail = "newEmail@classicmodelcars.com" where repPhone = "+1 650 219 4782";
+  
+<h2>Exercise 4</h2>
+  <img src="https://github.com/Hallur20/DBAssignment07/blob/master/tegning.png"/>
   
