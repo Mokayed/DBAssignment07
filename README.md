@@ -109,7 +109,7 @@ ON posts(title)
 update CustomerOverview set repPhone = "+1 212 555 4000" where (repPhone in ("+1 212 555 3000") AND customerNumber <> 0);
   ```
   
-  <h3>next question in e3</h3>
+  <h3>next question in exercise 3</h3>
   
   <p>we first tried out this line of code to see what would happen:</p>
   
