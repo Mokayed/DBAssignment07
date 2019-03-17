@@ -93,21 +93,38 @@ We would make a primary key which contains the customerName and repEmail as a co
 
 <h2>Exercise 3</h2>
 
-we created a full text indext on the phone in offices in order to not get the "you are using safe update mode" error.
-index helps with: function-based index that avoids the implicit type conversion.
-->insert example on full text index thing<-
+<p>we created a full text indext on the phone in offices in order to not get the "you are using safe update mode" error.
+indexes are function based that avoids the implicit type conversion. down below is the code:</p>
+
+```sql
+CREATE FULLTEXT INDEX index_name
+ON posts(title)
+```
   
-  then we were able to change the repPhone (we also change offices phone because else the repPhone would not make sense):
-  
+  <p>
+  then we were able to change the repPhone (first line may not be necessary, try using only last line first, because the offices table should also be affected by that line):</p>
+ 
+ ```sql
   update offices set phone = "+1 212 555 4000" where (phone = "+1 212 555 3000" AND officeCode <> 0);
 update CustomerOverview set repPhone = "+1 212 555 4000" where (repPhone in ("+1 212 555 3000") AND customerNumber <> 0);
+  ```
   
-  next question in e3:
+  <h3>next question in e3</h3>
   
+  <p>we first tried out this line of code to see what would happen:</p>
+  
+   ```sql
   update CustomerOverview set repEmail = "newEmail@classicmodelcars.com" where repName = "Leslie Jennings";
-  our expectation to this was that only the view would be affected, but to our surprise the employees table was also updated.
-  Then we started to research where thinsg could go wrong and we found out that some of the "rep's" were having the same phone numbers. (example: leslie jennings and leslie thompson), so they are in family which could cause issues if updating by the number. So a silly way of doing it would be this: set repEmail = "newEmail@classicmodelcars.com" where repPhone = "+1 650 219 4782";
+  ```
+  
+  <p>our expectation to this line of code was that only the view would be affected, but to our surprise the employees table was also updated.
+  Then we started to research where thinsg could go wrong and we found out that some of the "rep's" were having the same phone numbers. (example: leslie jennings and leslie thompson), so they are in family which could cause issues if updating by the number. So a silly way of doing it would be this:</p>
+ 
+  ```sql
+  set repEmail = "newEmail@classicmodelcars.com" where repPhone = "+1 650 219 4782";
+   ```
   
 <h2>Exercise 4</h2>
+<p>here we have an image that represents an index assigned to customerName, and the rowId.</p>
   <img src="https://github.com/Hallur20/DBAssignment07/blob/master/tegning.png"/>
   
