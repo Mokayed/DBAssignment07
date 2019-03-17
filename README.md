@@ -66,7 +66,7 @@ VIEW `CustomerOverview` AS
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong>Dependent</strong></td>
+<td align="left"><strong>Depends</strong></td>
 <td align="center">1</td>
 <td align="center">1</td>
 <td align="center">1</td>
